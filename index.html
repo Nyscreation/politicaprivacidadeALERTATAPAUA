@@ -1,0 +1,236 @@
+<title>Privacidade Alerta Tapauá</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  :root{
+    color-scheme: light;
+    --bg:#F2F5FA; --surface:#FFFFFF; --ink:#0C1633; --muted:#54607D;
+    --accent:#17409B; --accent-soft:#E3EAF7; --line:#D8E0EE;
+    --alert:#C2410C; --alert-soft:#FDEDE3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --bg:#080E22; --surface:#101A36; --ink:#E8ECF7; --muted:#9AA6C4;
+      --accent:#7FA6EE; --accent-soft:#16244A; --line:#22315A;
+      --alert:#F0A272; --alert-soft:#2A1A12;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --bg:#080E22; --surface:#101A36; --ink:#E8ECF7; --muted:#9AA6C4;
+    --accent:#7FA6EE; --accent-soft:#16244A; --line:#22315A;
+    --alert:#F0A272; --alert-soft:#2A1A12;
+  }
+
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    font-size:17px; line-height:1.65;
+  }
+  .wrap{ max-width:730px; margin:0 auto; padding-inline:20px; padding-block:0 72px; }
+
+  header.top{
+    border-bottom:1px solid var(--line); background:var(--surface);
+    margin-inline:-20px; padding-inline:20px; padding-block:34px 26px;
+  }
+  .eyebrow{
+    font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin:0 0 10px;
+  }
+  h1{
+    font-family:"Bitter", Georgia, serif; font-weight:600;
+    font-size:clamp(28px,6vw,38px); line-height:1.15; margin:0 0 14px;
+    text-wrap:balance; letter-spacing:-.01em;
+  }
+  .meta{ display:flex; flex-wrap:wrap; gap:8px 18px; margin:0; color:var(--muted); font-size:14.5px; }
+  .meta b{ color:var(--ink); font-weight:600; font-variant-numeric:tabular-nums; }
+
+  .lede{ font-size:18.5px; margin:30px 0 0; }
+
+  h2{
+    font-family:"Bitter", Georgia, serif; font-weight:600;
+    font-size:20px; line-height:1.3; margin:44px 0 12px;
+    display:flex; gap:12px; align-items:baseline; text-wrap:balance;
+  }
+  h2 .n{
+    font-variant-numeric:tabular-nums; color:var(--accent);
+    font-size:14px; font-family:"Source Sans 3",sans-serif; font-weight:600;
+    letter-spacing:.06em; flex:none; padding-top:3px;
+  }
+  h3{ font-size:16px; font-weight:600; margin:24px 0 6px; }
+  p{ margin:0 0 14px; }
+  ul{ margin:0 0 14px; padding-left:20px; }
+  li{ margin-bottom:7px; }
+  a{ color:var(--accent); }
+  strong{ font-weight:600; }
+
+  .tablebox{ overflow-x:auto; border:1px solid var(--line); border-radius:10px; background:var(--surface); margin:0 0 18px; }
+  table{ border-collapse:collapse; width:100%; min-width:560px; font-size:15.5px; }
+  th,td{ text-align:left; padding:11px 14px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th{ font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+  tr:last-child td{ border-bottom:none; }
+  td code{ font-size:13px; background:var(--accent-soft); color:var(--ink); padding:2px 6px; border-radius:4px; }
+
+  .note{
+    border-left:3px solid var(--accent); background:var(--surface);
+    padding:14px 16px; border-radius:0 8px 8px 0; margin:0 0 18px; font-size:16px;
+  }
+  .emergency{
+    border:1px solid var(--alert); background:var(--alert-soft);
+    padding:16px 18px; border-radius:10px; margin:0 0 18px;
+  }
+  .emergency strong{ color:var(--alert); display:block; margin-bottom:6px;
+    font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+  .emergency p{ margin:0; }
+
+  .contact{ background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:20px; margin-top:16px; }
+  .email{
+    display:block; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:16px; background:var(--accent-soft); color:var(--ink);
+    padding:10px 12px; border-radius:8px; margin:10px 0 12px; word-break:break-all;
+  }
+  button{
+    font:inherit; font-size:14px; font-weight:600; cursor:pointer;
+    background:var(--accent); color:#FFFFFF; border:none; padding:9px 16px; border-radius:8px;
+  }
+  button:focus-visible, a:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .ok{ color:var(--accent); font-size:14px; margin-left:10px; }
+  footer{ margin-top:48px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">Política de Privacidade</p>
+    <h1>Alerta Tapauá</h1>
+    <p class="meta">
+      <span>Plataforma Institucional Municipal</span>
+      <span>Pacote <b>com.nyscreation.alertatapaua</b></span>
+      <span>Vigente desde <b>26/09/2026</b></span>
+    </p>
+  </header>
+
+  <p class="lede">O Alerta Tapauá reúne os alertas oficiais, os canais de emergência e o atendimento ao cidadão do município de Tapauá, no Amazonas. Esta política explica quais dados o aplicativo trata, por que os trata, com quem os compartilha e quais são os seus direitos.</p>
+
+  <div class="emergency">
+    <strong>Em emergência</strong>
+    <p>Ligue <strong>193</strong> para o Corpo de Bombeiros ou <strong>190</strong> para a Polícia Militar. O aplicativo facilita o contato e o registro da ocorrência, mas <strong>não substitui</strong> a chamada de emergência.</p>
+  </div>
+
+  <h2><span class="n">01</span> Quem trata os seus dados</h2>
+  <p>As ocorrências enviadas pelo aplicativo são recebidas e atendidas pelos órgãos do município de Tapauá — Corpo de Bombeiros, Defesa Civil Municipal, Polícia Militar e SEMMATUR. São eles que decidem como os dados são usados no atendimento, na condição de controladores nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+  <p>O aplicativo e sua infraestrutura são desenvolvidos e mantidos por <strong>NYS Creation</strong>, que atua como operador: trata os dados por conta dos órgãos e não os utiliza para finalidade própria. O contato para assuntos de privacidade está na seção 9.</p>
+
+  <h2><span class="n">02</span> Dados que o aplicativo trata</h2>
+  <p>O aplicativo <strong>não exige cadastro</strong> para consultar alertas, contatos e comunicados. Os dados abaixo são tratados conforme o que você usa.</p>
+
+  <div class="tablebox">
+    <table>
+      <thead>
+        <tr><th>Dado</th><th>Quando é coletado</th><th>Para quê</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Token de notificação</strong><br><code>Firebase Cloud Messaging</code></td>
+          <td>Ao ativar os alertas no celular</td>
+          <td>Identificador aleatório do aparelho, com as áreas e órgãos assinados, para entregar os alertas oficiais. Não identifica você pessoalmente.</td>
+        </tr>
+        <tr>
+          <td><strong>Nome e telefone</strong></td>
+          <td>Ao informar uma ocorrência identificada</td>
+          <td>Permitir que o órgão retorne o contato e conduza o atendimento do protocolo.</td>
+        </tr>
+        <tr>
+          <td><strong>Endereço e descrição da ocorrência</strong></td>
+          <td>Ao informar uma ocorrência</td>
+          <td>Localizar e entender o ocorrido. Inclui o tipo de emergência, a hora informada e observações que você escrever.</td>
+        </tr>
+        <tr>
+          <td><strong>Foto</strong> (opcional)</td>
+          <td>Se você anexar uma imagem</td>
+          <td>Ajudar o órgão a avaliar a situação. Enviar foto é sempre opcional.</td>
+        </tr>
+        <tr>
+          <td><strong>Localização precisa</strong> (opcional)</td>
+          <td>Só se você tocar em "Usar localização atual"</td>
+          <td>Registrar as coordenadas da ocorrência no mapa operacional. A localização <strong>nunca</strong> é lida em segundo plano nem enquanto o aplicativo está fechado.</td>
+        </tr>
+        <tr>
+          <td><strong>Protocolo e histórico</strong></td>
+          <td>Ao enviar uma ocorrência</td>
+          <td>Número de protocolo, situação, encaminhamentos entre órgãos e registro do atendimento, para você acompanhar em "Meus Protocolos".</td>
+        </tr>
+        <tr>
+          <td><strong>Dados técnicos de conexão</strong></td>
+          <td>Durante o uso</td>
+          <td>Estado da rede e da conexão, para saber se há internet antes de carregar o conteúdo, e limites de envio contra uso abusivo.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note">O aplicativo <strong>não</strong> lê sua agenda de contatos, <strong>não</strong> acessa câmera ou microfone em segundo plano, <strong>não</strong> lê SMS nem histórico de chamadas, <strong>não</strong> rastreia sua localização continuamente e <strong>não</strong> usa nenhum dado para publicidade, perfilamento ou venda a terceiros.</p>
+
+  <h2><span class="n">03</span> Base legal do tratamento</h2>
+  <p>Cada dado é tratado com o fundamento que lhe corresponde na LGPD:</p>
+  <ul>
+    <li><strong>Consentimento</strong> (art. 7º, I) — para enviar uma ocorrência você marca a declaração de que autoriza o uso dos dados para aquele atendimento. Foto, localização e identificação são opcionais e dependem de ato seu.</li>
+    <li><strong>Execução de política pública</strong> (art. 7º, III) — o atendimento de ocorrências e a emissão de alertas são atribuições dos órgãos municipais.</li>
+    <li><strong>Proteção da vida e da incolumidade física</strong> (art. 7º, VII) — em situações de emergência, para que o socorro chegue.</li>
+  </ul>
+
+  <h2><span class="n">04</span> Com quem os dados são compartilhados</h2>
+  <p>Sua ocorrência é encaminhada ao <strong>órgão municipal responsável</strong> pelo tipo de atendimento e pode ser repassada a outro órgão do município, mantendo o mesmo número de protocolo. Só os agentes autorizados de cada órgão acessam esses dados, por painéis próprios e com registro de auditoria das ações críticas.</p>
+  <p>A infraestrutura é o <strong>Google Firebase</strong> (Firestore, Cloud Functions e Cloud Messaging), onde os dados ficam armazenados e por onde as notificações são entregues. O uso pelo Google é regido pela <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Política de Privacidade do Firebase</a> e pela <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.</p>
+  <p>Fora isso, os dados só são compartilhados mediante ordem judicial ou requisição legal de autoridade competente. Não há serviço de análise, rastreamento ou publicidade no aplicativo.</p>
+
+  <h2><span class="n">05</span> Permissões do celular</h2>
+  <p>O aplicativo pede apenas o necessário, sempre no momento em que o recurso é usado:</p>
+  <ul>
+    <li><strong>Notificações</strong> — para receber os alertas oficiais.</li>
+    <li><strong>Arquivos</strong> — para anexar uma foto à ocorrência e abrir documentos baixados.</li>
+    <li><strong>Localização</strong> — apenas quando você toca em "Usar localização atual" ao registrar uma ocorrência.</li>
+  </ul>
+  <p>Você pode recusar qualquer uma delas: o restante do aplicativo continua funcionando, apenas o recurso ligado àquela permissão fica indisponível. Para revisar ou revogar depois, abra <strong>Configurações › Aplicativos › Alerta Tapauá › Permissões</strong> no seu Android.</p>
+
+  <h2><span class="n">06</span> Segurança e armazenamento</h2>
+  <p>Todo o tráfego entre o aplicativo e os servidores é criptografado. Protocolos, histórico de atendimento e dados administrativos não podem ser lidos ou escritos diretamente pelo aplicativo: passam obrigatoriamente por funções no servidor que verificam a autorização de quem pede. O acesso dos agentes é controlado por perfil, e ações críticas ficam registradas em auditoria.</p>
+  <p>Nenhum sistema é imune a incidentes. Se ocorrer um incidente de segurança com risco relevante aos seus dados, os titulares afetados e a autoridade competente serão comunicados, conforme o artigo 48 da LGPD.</p>
+
+  <h2><span class="n">07</span> Por quanto tempo os dados ficam guardados</h2>
+  <p>Os registros de ocorrência e seu histórico são mantidos pelos órgãos pelo prazo necessário ao atendimento e à guarda documental da administração pública municipal. O token de notificação vale enquanto o aplicativo estiver instalado e é descartado quando você desinstala ou desativa as notificações. Preferências ajustadas dentro do aplicativo ficam apenas no seu aparelho.</p>
+
+  <h2><span class="n">08</span> Seus direitos</h2>
+  <p>Pela LGPD você pode solicitar, a qualquer momento e sem custo: a confirmação de que existe tratamento; o acesso aos seus dados; a correção de dados incompletos ou desatualizados; a anonimização, o bloqueio ou a eliminação de dados desnecessários ou tratados em desconformidade; a portabilidade; a informação sobre com quem foram compartilhados; e a revogação do consentimento.</p>
+  <p>Basta escrever para o contato da seção 9, informando o número do protocolo quando o pedido se referir a uma ocorrência. A resposta é dada em até 15 dias. Pedidos de eliminação podem não ser atendidos quando houver dever legal de guarda pela administração pública — nesse caso você é informado do motivo.</p>
+
+  <h2><span class="n">09</span> Contato</h2>
+  <p>Dúvidas, pedidos relativos a dados ou relatos de problema devem ser enviados para o e-mail abaixo.</p>
+
+  <div class="contact">
+    <h3 style="margin-top:0">E-mail para assuntos de privacidade</h3>
+    <span class="email" id="mail">calisthenysoficial2@gmail.com</span>
+    <button id="copy" type="button">Copiar e-mail</button><span class="ok" id="ok" hidden>Copiado</span>
+  </div>
+
+  <h2><span class="n">10</span> Crianças e adolescentes</h2>
+  <p>O aplicativo é de interesse geral da comunidade e não é direcionado a menores de 13 anos, nem coleta conscientemente dados dessa faixa etária. Um adolescente pode acionar a emergência, como qualquer pessoa. Se você souber que uma criança enviou dados pessoais fora de uma situação de emergência, escreva para o contato acima e eles serão excluídos.</p>
+
+  <h2><span class="n">11</span> Alterações</h2>
+  <p>Esta política pode ser atualizada quando o aplicativo mudar. A data de vigência no topo indica a versão em vigor, e alterações relevantes são anunciadas por notificação dentro do aplicativo.</p>
+
+  <footer>Alerta Tapauá — Plataforma Institucional Municipal · com.nyscreation.alertatapaua · Documento atualizado em 26 de setembro de 2026.</footer>
+</div>
+
+<script>
+  document.getElementById('copy').addEventListener('click', function(){
+    var el = document.getElementById('mail');
+    var done = function(){ var o=document.getElementById('ok'); o.hidden=false; setTimeout(function(){o.hidden=true;},2000); };
+    function select(){
+      var r=document.createRange(); r.selectNodeContents(el);
+      var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); done();
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(el.textContent.trim()).then(done).catch(select);
+    } else { select(); }
+  });
+</script>
